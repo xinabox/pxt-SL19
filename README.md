@@ -1,17 +1,36 @@
 # pxt-SL19
 
-MakeCode package for the ☒SL19 - beta
+This is the MakeCode Package for the SL19 xChip.
 
-## TODO
+## Getting Started
 
-- [ ] Add a reference for your blocks here
-- [ ] Add "icon.png" image (300x200) in the root folder
-- [ ] Add "- beta" to the GitHub project description if you are still iterating it.
-- [ ] Turn on your automated build on https://travis-ci.org
-- [ ] Use "pxt bump" to create a tagged release on GitHub
-- [ ] Get your package reviewed and approved https://makecode.microbit.org/packages/approval
+1. Open [Microsoft MakeCode for micro:bit](https://makecode.microbit.org).
+2. Select *Advanced > Add Package* in the toolbox.
+3. Copy and paste **https://github.com/xinabox/pxt-SL19** in the search bar and click search
+4. Select the package by clicking on it. The package will appear along with the existing packages in the toolbox.
 
-Read more at https://makecode.microbit.org/packages/build-your-own
+## Blocks
+
+### init
+```typescript
+init()
+```
+Configures SL19 for temperature measurement.
+
+### Ambient Temp (C)
+```typescript
+getAmbientTemp()
+```
+Returns the ambient temperature in degree celsius
+
+### Object Temp (C)
+
+```typescript
+getObjectTemp()
+```
+Returns the ambient temperature in degree celsius
+
+## Example Usage
 
 ## License
 
@@ -20,5 +39,7 @@ MIT
 ## Supported targets
 
 * for PXT/microbit
-(The metadata above is needed for package search.)
+```package
+SL19=github:xinabox/pxt-SL19
+```
 
