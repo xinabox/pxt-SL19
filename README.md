@@ -39,6 +39,7 @@ MIT
 ## Supported targets
 
 * for PXT/microbit
+* for PXT/maker
 ```package
 SL19=github:xinabox/pxt-SL19
 ```
