@@ -39,5 +39,5 @@ MIT
 ## Supported targets
 
 * PXT/microbit
-* PXT/maker
+* PXT/CC03
 
