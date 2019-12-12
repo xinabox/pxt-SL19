@@ -2,7 +2,6 @@
  * SL19 Tempertaure Sensor
  */
 //% weight=10 color=#17202A icon="\uf491" block="SL19"
-
 namespace SL19 {
     const MLX90614_REG_RAWIR1 = 0x04
     const MLX90614_REG_RAWIR2 = 0x05
