@@ -1,7 +1,7 @@
 {
-    "name": "pxt-SL19",
+    "name": "SL19",
     "version": "0.0.1",
-    "description": "MakeCode package for the ☒SL19 - beta",
+    "description": "XinaBox SL19 - Infrared Temperature Sensor",
     "license": "MIT",
     "dependencies": {
         "core": "*"
