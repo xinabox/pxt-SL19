@@ -1,8 +1,16 @@
 /**
  * SL19 Tempertaure Sensor
  */
-//% weight=10 color=#17202A icon="\uf491" block="SL19"
+//% color=#444444 icon="\f2c8"
+//% groups=['On start', 'Variables', 'Optional']
 namespace SL19 {
+
+    export enum Temperature {
+        //% block="ºC"
+        Celcius = 0,
+        //% block="ºF"
+        Fahrenheit = 1
+    }
     const MLX90614_REG_RAWIR1 = 0x04
     const MLX90614_REG_RAWIR2 = 0x05
     const MLX90614_REG_TA = 0x06
@@ -44,30 +52,28 @@ namespace SL19 {
         let object_temp = tempData;
         return object_temp;
     }
-
-    /**
-    * SL19 Initialize
-    */
-    //% blockId="Init" block="Init"
-    //% blockGap=1 weight=90
-    export function init(): void {
+    
+    function init(): void {
         let ID = readTemp(MLX90614_REG_ID1);
     }
 
+    init();
     /**
     * SL19 Ambient Temperature (C)
     */
-    //% blockId="Ambient Temp" block="Ambient Temp (C)"
-    //% blockGap=1 weight=90
-    export function getAmbientTemp(): number {
+    //% block="SL19 ambient temperature %u"
+    //% weight=50 blockGap=8
+    //% group="Variables"
+    export function getAmbientTemp(u: Temperature): number {
         return getAmbTemp();
     }
     /**
    * SL19 Object Temperature (C)
    */
-    //% blockId="Object Temp" block="Object Temp (C)"
-    //% blockGap=1 weight=90
-    export function getObjectTemp(): number {
+    //% block="SL19 object temperature %u"
+    //% weight=50 blockGap=8
+    //% group="Variables"
+    export function getObjectTemp(u: Temperature): number {
         return getObjTemp();
     }
 }
