@@ -1,7 +1,7 @@
 /**
  * SL19 Tempertaure Sensor
  */
-//% color=#444444 icon="\f2c8"
+//% color=#444444 icon="\uf2c7"
 //% groups=['On start', 'Variables', 'Optional']
 namespace SL19 {
 
