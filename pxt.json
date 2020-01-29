@@ -1,10 +1,11 @@
 {
     "name": "SL19",
     "version": "1.0.2",
-    "description": "XinaBox SL19 - Infrared Temperature Sensor",
+    "description": "XinaBox SL19 Infrared Temperature sensor: Object and Ambient Temperature",
     "license": "MIT",
     "dependencies": {
-        "core": "*"
+        "core": "*",
+        "xinabox-cs11": "*"
     },
     "files": [
         "README.md",
@@ -13,5 +14,6 @@
     "testFiles": [
         "test.ts"
     ],
-    "public": true
+    "public": true,
+    "preferredEditor": "blocksprj"
 }
